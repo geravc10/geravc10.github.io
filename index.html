@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Curriculim Vitae</title>
+    <link rel="stylesheet" href="/home/gera/Escritorio/Programacion Argentina 4.0/Proyecto Final/estilos.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Gerardo Noé</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contener-img">
+                <img src="/home/gera/Escritorio/Programacion Argentina 4.0/Proyecto Final/yo.jpg" alt=""">
+            </div>
+            <h1>Gerardo Noé Vega Corica</h1>
+            <h2>Desarrollador de Software</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://discord.com/" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            </div>
+    </section>
+
+    <!-- SECCION SOMBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Gerardo Noé Vega Corica.</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta accusantium libero sint repudiandae suscipit nostrum aspernatur voluptatem provident consectetur facere incidunt, vitae, nulla fugiat molestias earum ullam quae commodi veniam.</p>
+            <div class="fila">
+                <!-- Datos Personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            07-10-1993
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            3549-123456
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ejemplo@ejemplo.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.ejemplo.com.ar
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            Calle Los Santos 123, Cordoba, Argentina.
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            Desarrolador de Software
+                        </li>
+                    </ul>
+                </div>
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <a href="https://play.google.com/store/apps/details?id=com.mobile.legends&hl=es_AR&gl=US" target="_blank" style="text-decoration: none; color: aliceblue;" ><span>JUEGOS</span></a>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <a href="https://es.wikipedia.org/wiki/Cruz_del_Eje" target="_blank" style="text-decoration: none; color: aliceblue;" ><span>VIAJAR</span></a>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <a href="https://www.youtube.com/channel/UCTRZQFQJtkdVOzv8kenRkMA" target="_blank" style="text-decoration: none; color: aliceblue;" ><span>MUSICA</span></a>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <a href="https://linuxmint.com/" target="_blank" style="text-decoration: none; color: aliceblue;" ><span>LINUX</span></a>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <a href="https://www.casadellibro.com/libro-la-desaparicion-del-universo/9788493727499/1772131" target="_blank" style="text-decoration: none; color: aliceblue;" ><span>LIBROS</span></a>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <a href="https://www.google.com/search?q=amarok&sxsrf=AJOqlzUhmCWOIUS7ID6H0zdnou9VY-WWHw:1677036390952&source=lnms&tbm=isch&sa=X&ved=2ahUKEwimqu6yl6j9AhXtr5UCHfaNA5MQ_AUoAXoECAEQAw&biw=1366&bih=664&dpr=1" target="_blank" style="text-decoration: none; color: aliceblue;" ><span>AUTOS</span></a>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera-retro"></i>
+                            <a href="https://www.instagram.com/portillx/?hl=es" target="_blank" style="text-decoration: none; color: aliceblue;" ><span>FOTOS</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+                <button><a download="CV" href="/home/gera/Escritorio/Programacion Argentina 4.0/Proyecto Final/cv.docx" style="text-decoration: none; color: aliceblue;">
+                    Descargar CV <i class="fa-solid fa-download"></i></a>
+                    <span class="overlay"></span>
+                </button>
+       </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                   <h3>Technical Skills</h3> 
+                   <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>57%</span>
+                        </div>
+                    </div> 
+               </div>
+                   <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div> 
+                   </div>
+                   <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- Professional Skills-->
+                <div class="col">
+                    <h3>Professional Skills</h3> 
+                    <div class="skill">
+                         <span>Comunicacion</span>
+                         <div class="barra-skill">
+                             <div class="progreso">
+                                 <span>90%</span>
+                             </div>
+                         </div> 
+                    </div>
+                    <div class="skill">
+                         <span>Trabajo en equipo</span>
+                         <div class="barra-skill">
+                             <div class="progreso">
+                                 <span>90%</span>
+                             </div>
+                         </div> 
+                    </div>
+                    <div class="skill">
+                         <span>Creatividad</span>
+                         <div class="barra-skill">
+                             <div class="progreso">
+                                 <span>80%</span>
+                             </div>
+                         </div> 
+                     </div>
+                     <div class="skill">
+                         <span>Dedicacion</span>
+                         <div class="barra-skill">
+                             <div class="progreso">
+                                 <span>95%</span>
+                             </div>
+                         </div> 
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquid labore facilis? Amet eum natus, accusamus voluptatem facere nobis minima quo cupiditate consequuntur dolor repudiandae fuga ducimus dignissimos quas numquam.</p>
+                        <div class="conectori">
+                            <div class="circuloi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquid labore facilis? Amet eum natus, accusamus voluptatem facere nobis minima quo cupiditate consequuntur dolor repudiandae fuga ducimus dignissimos quas numquam.</p>
+                        <div class="conectori">
+                            <div class="circuloi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquid labore facilis? Amet eum natus, accusamus voluptatem facere nobis minima quo cupiditate consequuntur dolor repudiandae fuga ducimus dignissimos quas numquam.</p>
+                        <div class="conectori">
+                            <div class="circuloi">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Font Developer</h4>
+                        <span class="casa">Nombre de Compañia</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquid labore facilis? Amet eum natus, accusamus voluptatem facere nobis minima quo cupiditate consequuntur dolor repudiandae fuga ducimus dignissimos quas numquam.</p>
+                        <div class="conectord">
+                            <div class="circulod">
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Font Developer</h4>
+                        <span class="casa">Nombre de Compañia</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquid labore facilis? Amet eum natus, accusamus voluptatem facere nobis minima quo cupiditate consequuntur dolor repudiandae fuga ducimus dignissimos quas numquam.</p>
+                        <div class="conectord">
+                            <div class="circulod">
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Font Developer</h4>
+                        <span class="casa">Nombre de Compañia</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquid labore facilis? Amet eum natus, accusamus voluptatem facere nobis minima quo cupiditate consequuntur dolor repudiandae fuga ducimus dignissimos quas numquam.</p>
+                        <div class="conectord">
+                            <div class="circulod">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="/home/gera/Escritorio/Programacion Argentina 4.0/Proyecto Final/porfolio1.avif" style="height: 230px; width: 340px;" alt="">
+
+                    <div id="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografias</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/home/gera/Escritorio/Programacion Argentina 4.0/Proyecto Final/porfolio2.jpg" style="height: 230px; width: 340px;" alt="">
+                    <div id="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografias</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/home/gera/Escritorio/Programacion Argentina 4.0/Proyecto Final/porfolio3.webp" style="height: 230px; width: 340px;" alt="">
+                    <div id="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografias</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/home/gera/Escritorio/Programacion Argentina 4.0/Proyecto Final/porfolio4.jpeg" style="height: 230px; width: 340px;" alt="">
+                    <div id="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografias</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/home/gera/Escritorio/Programacion Argentina 4.0/Proyecto Final/porfolio5.jpg" style="height: 230px; width: 340px;" alt="">
+                    <div id="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografias</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/home/gera/Escritorio/Programacion Argentina 4.0/Proyecto Final/porfolio6.png" style="height: 230px; width: 340px;" alt="">
+                    <div id="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Telefono">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" style="background-color: #252A2E;"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="/home/gera/Escritorio/Programacion Argentina 4.0/Proyecto Final/Captura de pantalla.png">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Calle 10 N°661, Barrio Los Altos, Cordoba.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>
+                                Llamame: 3549-456789
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                E-mail: gerardocorica10@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://discord.com/" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        </div>
+    </footer>
+
+    <script src="/home/gera/Escritorio/Programacion Argentina 4.0/Proyecto Final/cv.js"></script>
+</body>
+</html>
